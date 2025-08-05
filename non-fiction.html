@@ -1,0 +1,81 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 250px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;">͙✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧ ℬℴℴ𝓀 ℋ𝒶𝓋ℯ𝓃 ✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/911YPgxruQL._SY522_.jpg"/>
+						<b><br>Between the World and Me</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$26</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Between the World and Me">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81NffDOeFUL._SY522_.jpg"/>
+						<b><br>The Emperor of All Maladies</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$12"><del><small>$20</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Emperor of All Maladies">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/811HumtGpTL._SY522_.jpg">
+						<b><br>The Sixth Extinction</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Sixth Extinction">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/91v-hIJTOiL._SY522_.jpg">
+						<b><br>How to Survive a Plague</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$25"><del><small>$30</small></del><br><button type="submit" class="btn btn-warning" name="item" value="How to Survive a Plague">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51CZlxLwKOL._SY522_.jpg"/>
+						<b><br>The Art of Cruelty</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Art of Cruelty">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71ZR6hn+GbL._SY522_.jpg"/>
+						<b><br>Sapiens: A Brief History of Humankind</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$25</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Sapiens: A Brief History of Humankind">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71EyURQtEYL._SY522_.jpg"/>
+						<b><br>100 Essays I Don't Have Time to Write: On Umbrellas and Sword Fights, Parades and Dogs, Fire Alarms, Children, and Theater</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="100 Essays I Don't Have Time to Write">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/91e3kMVOboL._SY522_.jpg"/>
+						<b><br>An Indigenous Peoples' History of the United States</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$8"><del><small>$14</small></del><br><button type="submit" class="btn btn-warning" name="item" value="An Indigenous Peoples' History of the United States">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71maRKoYe3L._SY522_.jpg"/>
+						<b><br>The Year of Magical Thinking: National Book Award Winner </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Year of Magical Thinking">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41shZGS-G+L._SY445_SX342_.jpg"/>
+						<b><br>Thinking, Fast and Slow</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Thinking, Fast and Slow">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>

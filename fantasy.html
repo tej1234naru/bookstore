@@ -1,0 +1,81 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 250px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;">͙✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧ ℬℴℴ𝓀 ℋ𝒶𝓋ℯ𝓃 ✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81v0Nj+nX4L._SY522_.jpg"/>
+						<b><br>Alice's Adventures in Wonderland</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$8"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Alice's Adventures in Wonderland">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71s5OYjoYsL._SY522_.jpg"/>
+						<b><br>Sword in the Stone</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$9</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Sword in the Stone">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/716D+R1wDUL._SY522_.jpg">
+						<b><br>The Lion, the Witch and the Wardrobe: The Classic Fantasy Adventure Series</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$9</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Lion, the Witch and the Wardrobe">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/81B1Dgvi-OL._SY522_.jpg">
+						<b><br>The Last Unicorn </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$17"><del><small>$30</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Last Unicorn">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/613Du3aDx8L._SY522_.jpg"/>
+						<b><br>A Wizard of Earthsea</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$18</small></del><br><button type="submit" class="btn btn-warning" name="item" value="A Wizard of Earthsea">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/61PzEs2g2+L._SY522_.jpg"/>
+						<b><br>The Dark is Rising</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$14"><del><small>$23</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Dark is Rising">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/811nqCf7o1L._SY522_.jpg"/>
+						<b><br>The Princess Bride: S. Morgenstern's Classic Tale of True Love and High Adventure</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$11</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Princess Bride">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81MrlNQnAFL._SY522_.jpg"/>
+						<b><br>The Forgotten Beasts of Eld</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$15</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Forgotten Beasts of Eld">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81K+GXBZm0L._SY522_.jpg"/>
+						<b><br>Lord Foul's Bane</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Lord Foul's Bane">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/91vX5+6gYRL._SY522_.jpg"/>
+						<b><br>The Sword of Shannara</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Sword of Shannara">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>

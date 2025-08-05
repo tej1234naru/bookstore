@@ -1,0 +1,281 @@
+<html>
+		<head>
+			<title>Book store</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" initial-scale=1>
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+		</head>
+		<style>
+			div{
+				color: black;
+				text-align: center;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+			}
+			img{
+				height: 250px;
+                width: 180px;
+				padding-bottom: 20px;
+			}
+			button{
+				margin-top: 10px;
+			}
+		</style>
+        <body>
+			<div class="container mt-3">
+				<div class="row" >
+					<div class="col-lg-1"><i class="bi bi-list" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-house-door-fill" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-8"><h2 class="display-6" style="color:midnightblue;font-weight:500;">͙✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧ ℬℴℴ𝓀 ℋ𝒶𝓋ℯ𝓃 ✧·̩̩̥͙˚̩̥̩̥˚·̩̩̥͙✧</h2></div>
+					<div class="col-lg-1"><i class="bi bi-person-circle" style="font-size: 2rem;"></i></div>
+					<div class="col-lg-1"><i class="bi bi-cart-fill" style="font-size: 2rem;"></i></div>
+				</div><br>
+                <div class="row">
+                	<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://i5.walmartimages.com/asr/fb636329-bfd0-4a63-8a29-5976392f3278_1.e9466e818cfdcafa9f6188d4a9d4214f.jpeg?odnWidth=1000&odnHeight=1000&odnBg=ffffff"/>
+						<b><br>Learn HTML for beginners</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1200/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Learn HTML for beginners">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41zoxjP9lcL.jpg"/>
+						<b><br>Clean Code</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1500/-"><del><small>2400/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Clean Code">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71LM3pMsvWL._AC_UY327_FMwebp_QL65_.jpg">
+						<b><br>The C Programming Language 2e</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="820/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The C Programming Language 2e">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/718Sk4eZfCL._AC_UY327_FMwebp_QL65_.jpg">
+						<b><br>JAVA Programming for Beginners</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="JAVA Programming for Beginners">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/518FqJvR9aL._SY445_SX342_.jpg"/>
+						<b><br>Pragmatic Programmer</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="2300/-"><del><small>3500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Pragmatic Programmers">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41HfQG0rLFL._SX342_SY445_.jpg"/>
+						<b><br>Art of Computer Programming, Volumes 1-4A Boxed Set, The (Box Set)</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="21000/-"><del><small>24000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Art of Computer Programming">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41UGGE+IFTL._SY445_SX342_.jpg"/>
+						<b><br>Programming Pearls</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="499/-"><del><small>899/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Programming Pearls">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81HqVRRwp3L._SY522_.jpg"/>
+						<b><br>Eloquent JavaScript, 3rd Edition</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$21"><del><small>$29</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Eloquent JavaScript">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71ZbxsdqQBL._SY522_.jpg"/>
+						<b><br>And Then There Were None</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$6.5"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="And Then There Were None">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71FZo7-3BnL._SY522_.jpg"/>
+						<b><br>Gone Girl</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$12"><del><small>$18</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Gone Girl">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/91gLGiNHBCL._SY522_.jpg">
+						<b><br>The Postman Always Rings Twice</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$16</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Postman Always Rings Twice">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71HN+qdUVrL._SY522_.jpg">
+						<b><br>The Big Sleep </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Big Sleep">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/613Du3aDx8L._SY522_.jpg"/>
+						<b><br>In Cold Blood</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$18</small></del><br><button type="submit" class="btn btn-warning" name="item" value="In Cold Blood">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71UZysDFoiL._SY522_.jpg"/>
+						<b><br>Anatomy of a Murder</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$14"><del><small>$23</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Anatomy of a Murder">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/811nqCf7o1L._SY522_.jpg"/>
+						<b><br>The Da Vinci Code</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$11</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Da Vinci Code">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81JMESMWHuL._SY522_.jpg"/>
+						<b><br>The Daughter of Time</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$15</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Daughter of Time">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81StdL0jiIL._SY522_.jpg"/>
+						<b><br>Big Little Lies</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Big Little Lies">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81ogQTdb+eL._SY522_.jpg"/>
+						<b><br>The Moonstone </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Moonstone">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/814+fLQIMYL._SY522_.jpg"/>
+						<b><br>PHP Programming for Beginners</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="PHP Programming for Beginners">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81NIme0x6CL._SY522_.jpg"/>
+						<b><br>SQL Queries for Mere Mortals</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$36"><del><small>$60</small></del><br><button type="submit" class="btn btn-warning" name="item" value="SQL Queries for Mere Mortals">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81v0Nj+nX4L._SY522_.jpg"/>
+						<b><br>Alice's Adventures in Wonderland</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$8"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Alice's Adventures in Wonderland">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71s5OYjoYsL._SY522_.jpg"/>
+						<b><br>Sword in the Stone</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$9</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Sword in the Stone">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/716D+R1wDUL._SY522_.jpg">
+						<b><br>The Lion, the Witch and the Wardrobe: The Classic Fantasy Adventure Series</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$9</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Lion, the Witch and the Wardrobe">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/81B1Dgvi-OL._SY522_.jpg">
+						<b><br>The Last Unicorn </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$17"><del><small>$30</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Last Unicorn">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/613Du3aDx8L._SY522_.jpg"/>
+						<b><br>A Wizard of Earthsea</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$18</small></del><br><button type="submit" class="btn btn-warning" name="item" value="A Wizard of Earthsea">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/61PzEs2g2+L._SY522_.jpg"/>
+						<b><br>The Dark is Rising</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$14"><del><small>$23</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Dark is Rising">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/811nqCf7o1L._SY522_.jpg"/>
+						<b><br>The Princess Bride: S. Morgenstern's Classic Tale of True Love and High Adventure</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$11</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Princess Bride">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81MrlNQnAFL._SY522_.jpg"/>
+						<b><br>The Forgotten Beasts of Eld</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$15</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Forgotten Beasts of Eld">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51nOLyH3K5L._SY445_SX342_.jpg"/>
+						<b><br>Madame Bovary</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1200/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Madame Bovary">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/31xXfVRPC4L._SY445_SX342_.jpg"/>
+						<b><br>Beloved</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Beloved">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/61w+5m68dUL._SY522_.jpg"/>
+						<b><br>The Blazing World</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Blazing World">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/31zqP-j9VmL._SY445_SX342_.jpg"/>
+						<b><br>Frankenstein</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$3"><del><small>$7</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Frankenstein">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/617TRkzo1HL._SY522_.jpg">
+						<b><br>The Stars My Destination</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$9</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Stars My Destination">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71rp7o5oTnL._SY522_.jpg">
+						<b><br>The Odyssey</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Odyssey">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41css5eR-mL._SY445_SX342_.jpg"/>
+						<b><br>Solaris</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Solaris">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51QjxuEe3XL._SY445_SX342_.jpg"/>
+						<b><br>The Moon is a Harsh Mistress</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$10</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Moon is a Harsh Mistress">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51kM6V1EGML._SY445_SX342_.jpg"/>
+						<b><br>The Left Hand of Darkness</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$11</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Left Hand of Darkness">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51+IHyBZuRL._SY445_SX342_.jpg"/>
+						<b><br>A Scanner Darkly</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$9"><del><small>$15</small></del><br><button type="submit" class="btn btn-warning" name="item" value="A Scanner Darkly">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/91gXtfDdRTL._SY522_.jpg"/>
+						<b><br>Neuromancer</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Neuromancer">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51NmXz5YD3L._SY445_SX342_.jpg"/>
+						<b><br>Snow Crash</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Snow Crash">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/41gWTweLm9L._SY445_SX342_.jpg">
+						<b><br>The Iliad</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="820/-"><del><small>900/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Iliad">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/71rp7o5oTnL._SY522_.jpg">
+						<b><br>The Odyssey</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>1000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Odyssey">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71JQtIxixbL._AC_UY327_FMwebp_QL65_.jpg"/>
+						<b><br>The World and All That It Holds</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="900/-"><del><small>1500/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The World and All That It Holds">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51jPS4zVdLL._SY445_SX342_.jpg"/>
+						<b><br>All the Broken Places</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="1000/-"><del><small>2000/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="All the Broken Places">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/519mC1TdRuL._SX342_SY445_.jpg"/>
+						<b><br>The Last Murder at the End of the World</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="499/-"><del><small>899/-</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Last Murder at the End of the World">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51iU8JIBGEL._SY445_SX342_.jpg"/>
+						<b><br>The Underground Library</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$21"><del><small>$29</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Underground Library">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/911YPgxruQL._SY522_.jpg"/>
+						<b><br>Between the World and Me</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$26</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Between the World and Me">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81NffDOeFUL._SY522_.jpg"/>
+						<b><br>The Emperor of All Maladies</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$12"><del><small>$20</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Emperor of All Maladies">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/811HumtGpTL._SY522_.jpg">
+						<b><br>The Sixth Extinction</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Sixth Extinction">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12"><img class="img rounded" src="https://m.media-amazon.com/images/I/91v-hIJTOiL._SY522_.jpg">
+						<b><br>How to Survive a Plague</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$25"><del><small>$30</small></del><br><button type="submit" class="btn btn-warning" name="item" value="How to Survive a Plague">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51CZlxLwKOL._SY522_.jpg"/>
+						<b><br>The Art of Cruelty</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Art of Cruelty">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71ZR6hn+GbL._SY522_.jpg"/>
+						<b><br>Sapiens: A Brief History of Humankind</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$13"><del><small>$25</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Sapiens: A Brief History of Humankind">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71EyURQtEYL._SY522_.jpg"/>
+						<b><br>100 Essays I Don't Have Time to Write: On Umbrellas and Sword Fights, Parades and Dogs, Fire Alarms, Children, and Theater</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$11"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="100 Essays I Don't Have Time to Write">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/91e3kMVOboL._SY522_.jpg"/>
+						<b><br>An Indigenous Peoples' History of the United States</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$8"><del><small>$14</small></del><br><button type="submit" class="btn btn-warning" name="item" value="An Indigenous Peoples' History of the United States">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/71maRKoYe3L._SY522_.jpg"/>
+						<b><br>The Year of Magical Thinking: National Book Award Winner </b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$17</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Year of Magical Thinking">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41shZGS-G+L._SY445_SX342_.jpg"/>
+						<b><br>Thinking, Fast and Slow</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Thinking, Fast and Slow">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/51wjd2ptLeL._SY445_SX342_.jpg"/>
+						<b><br>If the Tide Turns</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="If the Tide Turns">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/41C+-wXnPDL._SY445_SX342_.jpg"/>
+						<b><br>Reminders of Him</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$36"><del><small>$60</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Reminders of Him">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/81K+GXBZm0L._SY522_.jpg"/>
+						<b><br>Lord Foul's Bane</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$10"><del><small>$19</small></del><br><button type="submit" class="btn btn-warning" name="item" value="Lord Foul's Bane">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 "><img class="img rounded" src="https://m.media-amazon.com/images/I/91vX5+6gYRL._SY522_.jpg"/>
+						<b><br>The Sword of Shannara</b><br>
+						<form action="addedToCart" method="GET"><input type="text" style="width:65px; font-weight:bold;" name="cost" value="$7"><del><small>$12</small></del><br><button type="submit" class="btn btn-warning" name="item" value="The Sword of Shannara">ADD TO CART <i class="bi bi-cart4"></i></button></form>
+					</div>
+                </div><br><br>
+				<form action="cart" method="GET">
+					<center><input type="submit" class="btn btn-success" style="width:30%;font-weight: bold;" value="GO TO CART"></center>
+				</form><br><br>
+            </div>
+		</body>
+</html>
