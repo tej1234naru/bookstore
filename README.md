@@ -1,6 +1,6 @@
 Bookstore Management System — Concise Academic Overview
 
-Project Summary
+Project Summary: 
 This project presents a comprehensive full-stack web application designed for effective bookstore management. 
 The system facilitates both user and administrator interactions within a secure, authenticated environment. 
 Regular users have access to book browsing and search functionalities, while administrators retain elevated privileges, including the ability to add and remove book records.
